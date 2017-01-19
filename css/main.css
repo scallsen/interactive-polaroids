@@ -17,6 +17,7 @@ body {
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
   position: absolute;
+  transition: all 500ms;
 }
 
 .polaroid > img {
@@ -30,33 +31,30 @@ body {
 }
 
 figure:nth-child(1) {
-  left: calc(40% - 125px);
+  left: calc(35% - 125px);
   top: 100px;
   transform: rotate(-10deg);
   z-index: 500;
 }
 
 figure:nth-child(2) {
-  left: calc(50% - 125px);
+  left: calc(45% - 125px);
   top: 150px;
   transform: rotate(5deg);
   z-index: 1000;
 }
 
 figure:nth-child(3) {
-  left: calc(60% - 125px);
+  left: calc(55% - 125px);
   top: 100px;
   transform: rotate(30deg);
   z-index: 750;
 }
 
-figure {
-  transition: all 500ms;
-}
-
-figure:hover {
+.polaroid:hover {
   z-index: 2000;
   transform: rotate(0deg);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, .8);
 }
 
 figure {
